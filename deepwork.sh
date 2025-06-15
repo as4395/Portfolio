@@ -30,8 +30,8 @@ deepwork() {
 
   # Add the websites to block based on user input
   [[ "$stocks" == "y" ]] && to_block+=("finance")
-  [[ "$google_amazon" == "y" ]] && to_block+=("google, amazon")
-  [[ "$messages" == "y" ]] && to_block+=("silence")
+  [[ "$google_amazon" == "y" ]] && to_block+=("google, amazon") 
+  [[ "$messages" == "y" ]] && to_block+=("silence") 
 
   # Display the websites that are being blocked
   echo ""
