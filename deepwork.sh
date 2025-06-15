@@ -52,6 +52,18 @@ deepwork() {
     "$blocker" -start "$block" -lock "$minutes"
   done
 
+# Verified real quotes related to productivity
+  quotes=(
+    "The secret to getting ahead is getting started. – Mark Twain"
+    "What you do today can improve all your tomorrows. – Ralph Marston"
+    "The way to get started is to quit talking. – Walt Disney"
+    "Success is not final, failure is not fatal. – Winston Churchill"
+    "Discipline is the foundation of a successful life. – Jim Rohn"
+  )
+
+  # Select a random quote from the array
+  random_quote=${quotes[$RANDOM % ${#quotes[@]}]}
+  
   # Path for arttime from Homebrew
-  /opt/homebrew/bin/arttime --nolearn -a butterfly -t "Deep work time – blocking distractions"
+  /opt/homebrew/bin/arttime --nolearn -a butterfly -t "$random_quote"
 }
