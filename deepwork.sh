@@ -9,8 +9,17 @@
 
 # Usage:
   # Open terminal and type nano ~/.zshrc
+  # Paste the script into the text editor
+  # Hit Ctrl X, then press Y, and then press return to exit
+  #
   # Setup different blocklists on Cold Turkey and set them to continous 
   # I currently have blocks for Google, Amazon, Stocks, and Messages
+
+# Additional features added:
+  # Soundtrack plays via afplay in background. To stop manually, find PID with `ps aux | grep afplay` and run `kill <PID>`.
+    # Note: PID is the process ID of afplay shown in the output.
+  # Random rotating quotes displayed at session start, chosen to boost motivation.
+    # Users can customize or add their own quotes in the array.
 
 deepwork() {
   # Prompt the user for how long they want to block distractions
@@ -19,6 +28,10 @@ deepwork() {
   read "stocks? > block stocks? (y/n): "
   read "messages? > block messages? (y/n): "
 
+  # Start playing the soundtrack on loop
+  afplay "/path/to/your/soundtrack.mp3" &  # Replace with your soundtrack's path
+  soundtrack_pid=$!  # Capture the soundtrack's process ID
+  
   # Convert hours to minutes
   minutes=$((hours * 60))
 
@@ -66,4 +79,7 @@ deepwork() {
   
   # Path for arttime from Homebrew
   /opt/homebrew/bin/arttime --nolearn -a butterfly -t "$random_quote"
+
+  # Stop the soundtrack after the session is done
+  kill "$soundtrack_pid"
 }
