@@ -1,85 +1,102 @@
-# Script to Automate Your Deepwork (MacOS)
-# Requirements:
-  # Homebrew:
-    # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # Cold Turkey (Free Version) 
-    # https://getcoldturkey.com
-  # Arttime CLI application:
-    # brew install arttime
+#!/bin/bash
 
-# Usage:
-  # Open terminal and type nano ~/.zshrc
-  # Paste the script into the text editor
-  # Hit Ctrl X, then press Y, and then press return to exit
-  #
-  # Setup different blocklists on Cold Turkey and set them to continous 
-  # I currently have blocks for Google, Amazon, Stocks, and Messages
+# Deepwork Automation Script
 
-# Additional features added:
-  # Soundtrack plays via afplay in background. To stop manually, find PID with `ps aux | grep afplay` and run `kill <PID>`.
-    # Note: PID is the process ID of afplay shown in the output.
-  # Random rotating quotes displayed at session start, chosen to boost motivation.
-    # Users can customize or add their own quotes in the array.
+echo "Welcome to Deepwork automation."
 
-deepwork() {
-  # Prompt the user for how long they want to block distractions
-  read "hours? > how long? (in hours): "
-  read "google_amazon? > block google/amazon? (y/n): "
-  read "stocks? > block stocks? (y/n): "
-  read "messages? > block messages? (y/n): "
+# Duration input
+read -p "How long do you want to block distractions? (hours, e.g. 1.5): " hours
 
-  # Start playing the soundtrack on loop
-  afplay "/path/to/your/soundtrack.mp3" &  # Replace with your soundtrack's path
-  soundtrack_pid=$!  # Capture the soundtrack's process ID
-  
-  # Convert hours to minutes
-  minutes=$((hours * 60))
+# Soundtrack
+read -p "Play soundtrack? (y/n): " play_soundtrack
+if [[ "$play_soundtrack" == "y" ]]; then
+  read -p "Enter full path to soundtrack mp3: " soundtrack_path
+fi
 
-  # Cold Turkey Free web blocker path
-  blocker="/Applications/Cold Turkey Blocker.app/Contents/MacOS/Cold Turkey Blocker"
+# Website blocklist
+declare -A categories
+echo "Enter categories and websites to block."
+echo "Leave category empty to finish."
 
-  # Initialize empty list for the websites to block
-  to_block=()
+while true; do
+  read -p "Category name (or ENTER to finish): " category_name
+  if [ -z "$category_name" ]; then
+    break
+  fi
+  read -p "Websites (comma-separated): " websites
+  categories["$category_name"]=$websites
+done
 
-  # Add the websites to block based on user input
-  [[ "$stocks" == "y" ]] && to_block+=("finance")
-  [[ "$google_amazon" == "y" ]] && to_block+=("google, amazon") 
-  [[ "$messages" == "y" ]] && to_block+=("silence") 
+# Enable Do Not Disturb
+echo "Enabling Do Not Disturb..."
+osascript ~/enable_dnd.scpt
 
-  # Display the websites that are being blocked
-  echo ""
-  echo "Blocking the following for $hours hours: ${to_block[*]}"
-  echo "Press any key to cancel..."
-
-  # Countdown before starting
-  for i in {10..1}; do
-    echo -n "$i... "
-    sleep 1
-    read -t 1 -n 1 key && { echo "Cancelled."; return; }
+# Block websites via /etc/hosts
+echo "Modifying /etc/hosts to block websites..."
+sudo bash -c 'echo "" >> /etc/hosts'  # just a newline
+for category in "${!categories[@]}"; do
+  for website in ${categories[$category]//,/ }; do
+    echo "127.0.0.1 $website" | sudo tee -a /etc/hosts > /dev/null
   done
+done
 
-  echo ""
-  
-  # Block the selected websites using Cold Turkey Free
-  for block in "${to_block[@]}"; do
-    "$blocker" -start "$block" -lock "$minutes"
+# Close distraction apps
+echo "Closing known distraction apps..."
+apps_to_close=("Safari" "Firefox" "Brave" "Slack" "Discord" "Zoom")
+for app in "${apps_to_close[@]}"; do
+  pkill "$app" 2>/dev/null
+done
+
+# Start soundtrack if needed
+if [[ "$play_soundtrack" == "y" ]]; then
+  afplay "$soundtrack_path" &
+  soundtrack_pid=$!
+fi
+
+# Pomodoro mode
+read -p "Enable Pomodoro mode? (y/n): " pomodoro_mode
+if [[ "$pomodoro_mode" == "y" ]]; then
+  pomodoro_duration=25
+  break_duration=5
+  while true; do
+    echo "Pomodoro: Work for $pomodoro_duration minutes!"
+    sleep $((pomodoro_duration * 60))
+    echo "Take a break for $break_duration minutes!"
+    sleep $((break_duration * 60))
   done
+fi
 
-# Verified real quotes related to productivity
-  quotes=(
-    "The secret to getting ahead is getting started. – Mark Twain"
-    "What you do today can improve all your tomorrows. – Ralph Marston"
-    "The way to get started is to quit talking. – Walt Disney"
-    "Success is not final, failure is not fatal. – Winston Churchill"
-    "Discipline is the foundation of a successful life. – Jim Rohn"
-  )
+# Countdown timer
+echo "Session started. Time remaining: $hours hours."
+total_seconds=$(echo "$hours * 3600" | bc | cut -d'.' -f1)
 
-  # Select a random quote from the array
-  random_quote=${quotes[$RANDOM % ${#quotes[@]}]}
-  
-  # Path for arttime from Homebrew
-  /opt/homebrew/bin/arttime --nolearn -a butterfly -t "$random_quote"
-
-  # Stop the soundtrack after the session is done
-  kill "$soundtrack_pid"
+progress_bar() {
+  local total=$1
+  local interval=60  # update every minute
+  local elapsed=0
+  while [ "$elapsed" -lt "$total" ]; do
+    percent=$(( 100 * elapsed / total ))
+    echo -ne "Progress: [$percent%] Elapsed: $((elapsed / 60)) min\r"
+    sleep $interval
+    elapsed=$((elapsed + interval))
+  done
+  echo -e "\nTime's up!"
 }
+
+progress_bar "$total_seconds"
+
+# Restore system state
+echo "Session complete!"
+echo "Restoring system state..."
+
+osascript ~/disable_dnd.scpt
+
+# Clean up /etc/hosts
+sudo sed -i '' '/127.0.0.1/d' /etc/hosts
+
+# Stop soundtrack
+if [[ "$play_soundtrack" == "y" ]]; then
+  kill "$soundtrack_pid" 2>/dev/null
+fi
+
+echo "✅ Deep work session completed!"
