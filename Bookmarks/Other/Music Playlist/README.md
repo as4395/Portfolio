@@ -1,0 +1,333 @@
+Music Playlist
+
+- **God's Plan** by Drake
+- **Wake Me Up** by Avicii
+- **The Hills** by The Weekend
+- **Shipyards** by The Lake Poets
+- **Hotline Bling** by Drake
+- **Believer** by Imagine Dragons
+- **Heat Waves** by Glass Animals
+- **Eye of the Tiger** by Survivor
+- **STAY** by The Kid LAROI
+- **The Nights** by Avicii
+- **Sugar** by Maroon 5
+- **Calm Down** by Rema
+- **Night Changes** by One Direction
+- **Bad Habits** by Ed Sheeran
+- **Uptown Funk** by Mark Ronson
+- **Stereo Hearts** by Gym Class Heroes
+- **Animals** by Maroon 5
+- **Cake by the Ocean** by DNCE
+- **Memories** by Maroon 5
+- **Perfect** by Ed Sheeran
+- **Blinding Lights** by The Weeknd
+- **Viva La Vida** by Coldplay
+- **Ride** by Twenty One Pilots
+- **Let Me Love You** by DJ Snake
+- **Wavin' Flag** by K'naan
+- **The Middle** by Zedd
+- **Sunflower** by Post Malone
+- **Forget Me** by Lewis Capaldi
+- **In My Feelings** by Drake
+- **One Dance** by Drake
+- **Starboy** by the Weekend
+- **HUMBLE** by Kendrick Lamar
+- **Flowers** by Miley Cyrus
+- **Closer** by The Chainsmokers
+- **Bones** by Imagine Dragons
+- **Counting Stars** by OneRepublic
+- **I Ain't Worried** by OneRepublic
+- **As it Was** by Harry Styles
+- **Sunroof** by Nicky Youre
+- **Hey, Soul Sister** by Train
+- **Better** by Khalid
+- **Hall of Fame** by The Script
+- **High Hopes** by Panic! At the Disco
+- **Best Day of My Life** by American Authors
+- **Go Big Or Go Home** by American Authors
+- **Love Me Like You Do** by Elie Goulding
+- **Stop and Stare** by OneRepublic
+- **Am I Wrong** by Nico & Vinz
+- **Love Yourself** by Justin Bieber
+- **Thunder** by Imagine Dragons
+- **I Want it That Way** by Backstreet Boys
+- **Doja** by Central Cee
+- **Payphone** by Maroon 5
+- **Shut Up and Dance** by WALK THE MOON
+- **Dynamite** by Taio Cruz
+- **Hymn for the Weekend** by Coldplay
+- **Don’t Let Me Down** by The Chainsmokers
+- **Shape of You** by Ed Sheeran
+- **Rude** by MAGIC!
+- **This Is What You Came For** by Calvin Harris
+- **Party in the U.S.A.** by Miley Cyrus
+- **Waka Waka** by Shakira
+- **Nightcrawler** by Travis Scott
+- **Walk It Talk It** by Migos
+- **HIGHEST IN THE ROOM** by Travis Scott
+- **Murder on My Mind** by YNW Melly
+- **Swang** by Rae Sremmurd
+- **Lucid Dreams** by Juice WRLD
+- **The Box** by Roddy Ricch
+- **DNA** by Kendrick Lamar
+- **Mask Off** by Future
+- **Black Beatles** by Rae Sremmurd
+- **Congratulations** by Post Malone
+- **Wishing Well** by Juice WRLD
+- **Pop Out** by Polo G
+- **Stressed Out** by Twenty One Pilots
+- **Heathens** by Twenty One Pilots
+- **We Found Love** by Rihanna 
+- **I Gotta Feeling** by Black Eyed Peas
+- **Glad You Came** by EFA
+- **Levitating** by Dua Lipa
+- **RUNAWAY** by OneRepublic
+- **Attention** by Charlie Puth
+- **Pompeii** by Bastille
+- **Maps** by Maroon 5
+- **Havana** by Camila Cabello
+- **Save Your Tears** by The Weeknd
+- **Where Is The Love?** by Black Eyed Peas
+- **Firework** by Katy Perry
+- **Locked Out of Heaven** by Bruno Mars
+- **Happier** by Marshmello
+- **Rover** by S1mba
+- **Beautiful Things** by Benson Boone
+- **Houdini** by Dua Lipa
+- **The Color Violet** by Torey Lanez
+- **What Makes You Beautiful** by One Direction
+- **Wonderwall** by Oasis
+- **Sit Down** by James
+- **I Wanna Be Adored** by The Stone Roses
+- **This Is the One** by The Stone Roses
+- **Die With A Slime** by Lady Gaga
+- **Call Me Maybe** by Carly Rae Jepsen
+- **Cheap Thrills** by Sia
+- **Let Me Down Slowly** by Alec Benjamin
+- **Friendships** by Pascal Letoublon
+- **Calm Wind** by Peder B. Helland
+- **Something Just Like This** by The Chainsmokers
+- **Radioactive** by Imagine Dragons
+- **Lose Control** by Teddy Swims
+- **There’s Nothing Holdin’ Me Back** by Shawn Mendes
+- **Evening Sun** by The Strokes
+- **Coming Home** by Diddy - Dirty Money
+- **God Bless The U.S.A.** by Lee Greenwood
+- **Stargazing** by Myles Smith
+- **Here Comes The Sun** by The Beatles
+- **See You Again** by Wiz Khalifa
+- **Turn Down for What** by DJ Snake
+- **Not Afraid** by Eminem
+- **Marry You** by Bruno Mars
+- **Arhbo** by Ozuma
+- **Quit Playing Games With My Heart** by Backstreet Boys
+- **Relay** by Iyaz
+- **Circles** by Post Malone
+- **Maps** by Maroon 5
+- **Treat You Better** by Shawn Mendes
+- **Moves Like Jagger** by Maroon 5
+- **Waterfalls** by TLC
+- **Talk** by Khalid
+- **Sorry** by Justin Bieber
+- **Just Give Me A Reason** by P!nk
+- **The Door** by Teddy Swims
+- **APT.** by ROSÉ
+- **Unstoppable** by Sia
+- **Imagine** by John Lennon
+- **Gangnam Style** by Psy
+- **On My Way** by Alan Walker
+- **Only Girl In The World** by Rihanna
+- **What About Us** by P!nk
+- **Eyes Closed** by Ed Sheeran
+- **I Knew You Were Trouble** by Taylor Swift
+- **Cheques** by Shubh
+- **Gaddi Red Challenger** by Babbulicious
+- **Sucker** by Jonas Brothers
+- **Love Story** by Taylor Swift
+- **Thinking out Loud** by Ed Sheeran
+- **A Thousand Years** by Christina Perri
+- **This is What You Came For** by Calvin Harris
+- **Just the Way You Are** by Bruno Mars
+- **Attention** by Charlie Puth
+- **Girls Like You** by Maroon 5
+- **Dance The Night** by Dua Lipa
+- **A Thousand Miles** by Vanessa Carlton
+- **Too Sweet** by Hozier
+- **Wasted** by Juice WRLD
+- **Come As You Are** by Nirvana
+- **1979 (Remastered 2012)** by The Smashing Pumpkins
+- **Everlong** by Foo Fighters
+- **Zombie** by The Cranberries
+- **Nothing Else Matters** by Metallica
+- **Under the Bridge** by Red Hot Chili Peppers
+- **Knockin’ on Heaven’s Door** by Gun N’ Roses
+- **Good Riddance** by Green Day
+- **Don’t Look Back in Anger** by Oasis
+- **All Star** by Smash Mouth
+- **Happy** by Pharrell Williams
+- **Kiss Me Again (Radio Edit)** by Roy Bee
+- **She Will Be Loved** by Maroon 5
+- **One of These Nights** by Eagles
+- **Stronger** by Kelly Clarkson
+- **Copines** by Aya Nakamura
+- **Boulevard of Broken Dreams** by Green Day
+- **Kryptonite** by 3 Doors Down
+- **Losing Grip** by Avril Lavigne
+- **Paralyzer** by Finger Eleven
+- **Wish You Were Mine** by Philip George
+- **Complicated** by Avril Lavigne
+- **It Wasn’t Me** by Shaggy
+- **Give Me Everything** by Pitbull
+- **Diamonds** by Rihanna
+- **Now Or Never** by Pitbull
+- **It’s My Life Whatever I Wanna Do** by Vennu Mallesh
+- **Limitless** by Central Cee
+- **We Can’t Be Friends** by Ariana Grande
+- **My Own Worst Enemy** by Lit
+- **Amber** by 311
+- **3:15 (Breathe)** by Russ
+- **Angel** by Shaggy
+- **Party Rock Anthem** by LMFAO
+- **Hässlich** by AYLIVA
+- **Casanova** by Soolking  
+- **Forever Young** by Alphaville  
+- **Supersonic** by Oasis  
+- **Not Fair** by Niklas Dee  
+- **I Need Your Love** by Calvin Harris  
+- **This Love** by Maroon 5  
+- **Hey** by Pixies  
+- **Since U Been Gone** by Kelly Clarkson  
+- **Daily Duppy** by Central Cee  
+- **It Goes Like Nanana** by Peggy Gou  
+- **Chandelier** by Sia  
+- **End of the World** by Miley Cyrus  
+- **Roses** by The Chainsmokers  
+- **Hauseingang** by Pashanim  
+- **Somewhere I Belong** by Linkin Park  
+- **Sorry I’m Here For Someone Else** by Benson Boone  
+- **Bleeding Love** by Leona Lewis  
+- **Priceless** by Maroon 5  
+- **Better Now** by Post Malone  
+- **Althea** by Grateful Dead  
+- **2 Sitza** by Pashanim  
+- **Mittelmeer** by Pashanim  
+- **Everybody** by Backstreet Boys  
+- **Pink Pony Club** by Chappell Roan  
+- **In the Air Tonight** by Phil Collins  
+- **Don’t Stop Believin’** by Journey  
+- **Girl on Fire** by Alicia Keys  
+- **Whenever, Wherever** by Shakira  
+- **Righteous** by Juice WRLD  
+- **Party Monster** by The Weeknd  
+- **Tunnel Vision** by Kodak Black  
+- **Laugh Now Cry Later** by Drake  
+- **Niggas in Paris** by Jay-Z  
+- **Tokyo Drift** by Teriyaki Boyz  
+- **Out of Time** by The Weeknd  
+- **What Do You Mean?** by Justin Bieber  
+- **Loading** by Central Cee  
+- **BANDIT** by Don Toliver  
+- **Lover Is A Day** by Cuco  
+- **Poker Face** by Lady Gaga  
+- **Coming Down** by The Weeknd  
+- **Before You Go** by Lewis Capaldi  
+- **Bujji Thalli** by Devi Sri Prasad  
+- **Premalo** by Vijai Bulganin  
+- **Telusaa Telusaa** by Jubin Nautiyal  
+- **Dekhna Tenu** by Mohammad Faiz  
+- **Tere Mast Mast Do Nain** by Rahat Fateh Ali Khan  
+- **Vande Mataram** by Vishal-Sheykhar  
+- **Drunk Text** by Henry Moodie  
+- **Asha Pasham** by Anurag Kulkarni  
+- **India Waale** by Neeti Mohan  
+- **Tum Hi Ho** by Hithoon  
+- **Meri Aashiqui** by Palak Mucchal  
+- **Inkem Inkem Inkem Kaavale** by Sid Sriram  
+- **Super Machi** by Devi Sri Prasad  
+- **Nenu Nuvvantu** by Naresh Iyer  
+- **Zaalima** by Arijit Singh  
+- **Channa Mereya** by Arijit Singh  
+- **Chaleya** by Arijit Singh  
+- **Tunak Tunak Tun** by Daler Mehndi  
+- **Earth** by Lil Dicky  
+- **Notice Me** by PnB Rock  
+- **Ola Olaala Ala** by Karunya  
+- **Hello Rammante** by Vijay Prakash  
+- **Idhedho Bagundhe** by Vijay Prakash  
+- **Millionaire** by Yo Yo Honey Singh  
+- **Royals** by Lorde  
+- **Pranam Kanna** by Prince Henry  
+- **As Long As You Love Me** by Backstreet Boys  
+- **Don’t Go Breaking My Heart** by Backstreet Boys  
+- **Sandese Aate Hai** by Sonu Nigam  
+- **Raataan Lambiyan** by Tanishk Bagchi  
+- **Genie in a Bottle** by Christina Aguilera  
+- **Shake it Off** by Taylor Swift  
+- **Blank Space** by Taylor Swift  
+- **Anti-Hero** by Taylor Swift  
+- **On & On** by Cartoon  
+- **Dance Monkey** by Tones and I  
+- **Love The Way You Lie** by Eminem  
+- **We Don’t Talk Anymore** by Charlie Puth  
+- **Shabab(e)s im VIP** by Pashanim  
+- **Die for You** by The Weeknd  
+- **Enemy** by Imagine Dragons  
+- **Fight Song** by Rachel Platten  
+- **Good Luck, Babe!** by Chappell Roan  
+- **Señorita** by Shawn Mendes  
+- **That’s What I Like** by Bruno Mars  
+- **Rather Be** by Clean Bandit  
+- **This Land Is Your Land** by Woody Guthrie  
+- **America the Beautiful** by Blake Shelton  
+- **Stitches** by Shawn Mendes  
+- **Where Have You Been** by Rihanna  
+- **Azizam** by Ed Sheeran  
+- **Creepin’** by Metro Boomin  
+- **Show Me the Meaning of Being Lonely** by Backstreet Boys  
+- **Can’t Feel My Face** by The Weeknd  
+- **Timber** by Pitbull  
+- **On Top of The World** by Imagine Dragons  
+- **Macho Man** by Village People  
+- **You Can’t Always Get What You Want** by The Rolling Stones  
+- **Start Me Up** by The Rolling Stones  
+- **Born in the U.S.A.** by Bruce Springsteen  
+- **Beat It** by Michael Jackson  
+- **Sweet Home Alabama** by Lynyrd Skynyrd  
+- **Take Me Home, Country Road** by John Denver  
+- **Sweet Caroline** by Neil Diamond  
+- **Dazzlin’ Darlin** by Velours  
+- **Stay With Me** by Bobby Shann  
+- **Outside** by Calvin Harris  
+- **Rock That Body** by Black Eyed Peas  
+- **Meet Me Halfway** by Black Eyed Peas  
+- **Drugs** by Sonic Mine  
+- **Slow Dancing in a Burning Room** by John Mayer  
+- **I’m Good (Blue)** by David Guetta & Bebe Rexha  
+- **Twilight Zone** by Ariana Grande  
+- **I Like Me Better** by Lauv  
+- **yellowstone (holding you)** by Matt Hansen  
+- **Rockabye** by Clean Bandit  
+- **Santa Baby** by Laufey  
+- **Sing About Me, I’m Dyin’** by Kenrick Lamar  
+- **Bad Religion** by Frank Ocean  
+- **Slow Ride** by Foghat  
+- **read 2** by Knock2  
+- **Open Hearts** by The Weeknd  
+- **Back Down South** by Kings of Leon  
+- **Take It** by Dom Dolla  
+- **Gimme! Gimme! Gimme!** by ABBA  
+- **be my somebody new** by Avenu & Estée Evangeline  
+- **Be Something** by Polo G  
+- **Duvet** by bôa  
+- **We Are The People** by Empire of The Sun  
+- **Crazy on You** by Heart  
+- **Sapphire** by Ed Sheeran  
+- **Le plus fort du monde** by Black M  
+- **Arhbo** by Ozuna  
+- **Ramenez la coupe à la maison** by Vegedream  
+- **Merci les bleus** by KABONGO-DJ  
+- **Papaoutai** by Stromae  
+- **Give Me Some Sunshine** by Suraj Jagan & Sharman Joshi  
+- **Chammak Challo** by Akon & Hamsika Iyer  
+- **Naina** by Diljit Dosanjh  
+- **Hip's Don't Lie** by Shakira
