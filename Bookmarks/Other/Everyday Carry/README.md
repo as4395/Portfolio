@@ -1,0 +1,19 @@
+## Everyday Carry
+- Backpack
+- Wallet
+- Phone
+- Phone charger
+- MacBook
+- MacBook Charger
+- Vaseline
+- CeraVe
+- Notebook
+- Water Bottle
+- Protein Bar 
+- AirPods 
+- Eucerin
+- USB-C Adapter
+- Pens/Pencils
+- Tissues
+- Gum / Breath Mints
+- Mouse
