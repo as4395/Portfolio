@@ -253,6 +253,9 @@
 12. **アーモンド** - *Almond* by Won-pyung Sohn
 13. **五輪書（ごりんしょ）** - *The Book of Five Rings* by Miyamoto Musashi
 14. **陰翳礼讃（いんえいれいさん）** - *In Praise of Shadows* by Jun'ichirō Tanizaki
+15. **嫌われる勇気** - *The Courage to be Disliked* by Ichiro Kishimi and Fumitake Koga
+16. **走ることについて語るときに僕の語ること** - *What I Talk About When I Talk About Running* by Haruki Murakami
+17. **メモの魔力** - *The Magic of Memos* by Yuji Maeda
 
 
 # Textbooks 📘
@@ -347,3 +350,4 @@
 4. **No-Mind: Realizing Your True Nature** by Andre Halaw
 5. **Brand-Name Zen: The Commodification of Zen in the West** by Andre Halaw
 6. **The Heart Sutra: A Meditational Manual** by Andre Halaw
+7. **反応しない練習** - *Practice Without Reaction* by Ryushun Kusanagi
