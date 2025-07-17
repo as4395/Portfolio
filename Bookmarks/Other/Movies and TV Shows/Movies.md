@@ -9,7 +9,10 @@
 - **Fighter** (2024)
 - **The Beekeeper** (2023)
 - **Gran Turismo** (2023)
+- **Race Guuram** (2014)
+- **Willy Wonka & The Chocolate Factory** (1971)
 - **Barbie** (2023)
+- **Shutter Island** (2010)
 - **Spiderman: Across the Spider-Verse** (2023)
 - **Killers of the Flower Moon** (2023)
 - **Fast X** (2023)
@@ -29,6 +32,10 @@
 - **Wrath of Man** (2021)
 - **IP Man 4** (2019)
 - **Joker** (2019)
+- **RRR** (2022)
+- **Baahubali: The Beginning** (2015)
+- **Baahubali 2: The Conclusion** (2017)
+- **Rangasthalam** (2018)
 - **The Lion King** (2019)
 - **Midsommar** (2019)
 - **Parasite** (2019)
@@ -46,10 +53,12 @@
 - **Justice League** (2017)
 - **IT** (2017)
 - **Dunkirk** (2017)
+- **Naayak** (2013)
 - **Wonder Woman** (2017)
 - **The Boss Baby** (2017)
 - **Icarus** (2017)
 - **Doctor Strange** (2016)
+- **Atharintiki Daaredi** (2013)
 - **Suicide Squad** (2016)
 - **The Purge: Election Year** (2016)
 - **The Secret Life of Pets** (2016)
@@ -112,6 +121,7 @@
 - **Kung Fu Panda** (2008)
 - **The Boy in the Striped Pajamas** (2008)
 - **Iron Man** (2008)
+- **The Book Thief** (2013)
 - **No Country for Old Men** (2007)
 - **Superbad** (2007)
 - **Idiocracy** (2006)
@@ -134,8 +144,144 @@
 - **Copycat** (1995)
 - **Space Jam** (1996)
 - **Forrest Gump** (1994)
+- **The Giver** (2014)
 - **Rain Man** (1988)
 - **The Breakfast Club** (1985)
 - **Taxi Driver** (1976)
 - **Cool Hand Luke** (1967)
 - **To Kill a Mockingbird** (1962)
+- **In The Land of Saints and Sinners** (2023)
+- **Superman** (2025)
+
+## Watchlist
+- [ ] The Godfather Part 3
+- [ ] The Godfather Part 2
+- [ ] The Godfather
+- [ ] Donnie Darko
+- [ ] Tiger Zinda Hai
+- [ ] Pathaan
+- [ ] Jawan
+- [ ] Devara
+- [ ] Saaho
+- [ ] Hanu Man
+- [ ] Salaar
+- [ ] Lost in Translation
+- [ ] Rainman
+- [ ] Submarine
+- [ ] Hundred Beavers
+- [ ] Pineapple Express
+- [ ] The Conversation
+- [ ] The Exorcist
+- [ ] M:1-2 
+- [ ] Mission Impossible: The Final Reckoning
+- [ ] M:1-3
+- [ ] Mission Impossible
+- [ ] Jerry Maguire
+- [ ] Hoosier
+- [ ] Gattaca
+- [ ] Challengers
+- [ ] The Accountant
+- [ ] The Accountant 2
+- [ ] Zero Dark Thirty
+- [ ] Little Man
+- [ ] 1917
+- [ ] The Killer
+- [ ] Godzilla Minus One
+- [ ] Tejas
+- [ ] Hi Nanna
+- [ ] Chhava 
+- [ ] Carry-On
+- [ ] Lucky Bhaskar
+- [ ] Mickey 17
+- [ ] Captain America: Civil War
+- [ ] Ant-Man - Wasp
+- [ ] Cocaine Bear
+- [ ] Mean Girls
+- [ ] Longlegs
+- [ ] Reservoir Dogs
+- [ ] Monkey Man
+- [ ] Didi 
+- [ ] Wicked
+- [ ] The Polar Express
+- [ ] Willy Wonka: The Chocolate Factory
+- [ ] Twisters
+- [ ] September 5
+- [ ] The Conclave 
+- [ ] Ready Player One
+- [ ] Baby Driver
+- [ ] The Sixth Sense
+- [ ] Whiplash
+- [ ] Peninsula
+- [ ] Wonka
+- [ ] The Shawshank Redemption
+- [ ] Get Out
+- [ ] Knives Out
+- [ ] Enemy of the State
+- [ ] The Prestige
+- [ ] Margin Call
+- [ ] GoodFellas
+- [ ] The Big Short
+- [ ] Operation Mincemeat
+- [ ] Gladiator
+- [ ] Top Gun: Maverick
+- [ ] The Departed 
+- [ ] The Karate Kid
+- [ ] The Karate Kid 2
+- [ ] Rocky IV
+- [ ] Back to the Future
+- [ ] Back to the Future II
+- [ ] Back to the Future III
+- [ ] Titanic 
+- [ ] Saving Private Ryan
+- [ ] The Pursuit of Happyness
+- [ ] Inception
+- [ ] The Social Network
+- [ ] Captain America: The First Avenger
+- [ ] Ghost Protocol
+- [ ] Guardians of the Galaxy
+- [ ] John Wick 5
+- [ ] John Wick 4
+- [ ] John Wick 3
+- [ ] John Wick 2
+- [ ] John Wick
+- [ ] 10 Cloverfield Lane
+- [ ] Mission Impossible: Fallout
+- [ ] Mission Impossible: Dead Reckoning
+- [ ] Birx Box
+- [ ] Schinder’s List
+- [ ] The Truman Show
+- [ ] Django Unchained
+- [ ] Django
+- [ ] Ford v Ferrari
+- [ ] Dune 
+- [ ] Dune 2
+- [ ] Interstellar
+- [ ] Mrs Doubtfire
+- [ ] The Great Dictator
+- [ ] Trap
+- [ ] Creed III
+- [ ] Creed II
+- [ ] MS Dhoni: The Untold Story
+- [ ] London has Fallen
+- [ ] Creed
+- [ ] Limitless 
+- [ ] Ratouille 
+- [ ] Blood Diamond
+- [ ] The Da Vinci Code
+- [ ] The Devil Wears Prada
+- [ ] The Pianist
+- [ ] Catch Me if You Can
+- [ ] A Complete Unknown
+- [ ] 2001: A Space Odyssey
+- [ ] The Beatles: Get Back
+- [ ] Akira
+- [ ] Perfect Days
+- [ ] Senna
+- [ ] Bajrangi Bhaijaan
+- [ ] Jiro Dreams of Sushi
+- [ ] Indie Game: The Movie
+- [ ] Free Solo
+- [ ] The Pixar Story
+- [ ] The Kingdom of Dreams and Madness
+- [ ] The Boy and the Heron
+- [ ] Heads of State
