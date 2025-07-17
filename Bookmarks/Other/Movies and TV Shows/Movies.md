@@ -180,61 +180,64 @@
 - **The Conversation** (The Conversation)
 - **The Exorcist** (1973)
 - **Mission: Impossible 2** (2000)
-- [ ] Mission Impossible: The Final Reckoning
-- [ ] M:1-3
-- [ ] Mission Impossible
-- [ ] Jerry Maguire
-- [ ] Hoosier
-- [ ] Gattaca
-- [ ] Challengers
-- [ ] The Accountant
-- [ ] The Accountant 2
-- [ ] Zero Dark Thirty
-- [ ] Little Man
-- [ ] 1917
-- [ ] The Killer
-- [ ] Godzilla Minus One
-- [ ] Tejas
-- [ ] Hi Nanna
-- [ ] Chhava 
-- [ ] Carry-On
-- [ ] Lucky Bhaskar
-- [ ] Mickey 17
-- [ ] Captain America: Civil War
-- [ ] Ant-Man - Wasp
-- [ ] Cocaine Bear
-- [ ] Mean Girls
-- [ ] Longlegs
-- [ ] Reservoir Dogs
-- [ ] Monkey Man
-- [ ] Didi 
-- [ ] Wicked
-- [ ] The Polar Express
-- [ ] Willy Wonka: The Chocolate Factory
-- [ ] Twisters
-- [ ] September 5
-- [ ] The Conclave 
-- [ ] Ready Player One
-- [ ] Baby Driver
-- [ ] The Sixth Sense
-- [ ] Whiplash
-- [ ] Peninsula
-- [ ] Wonka
-- [ ] The Shawshank Redemption
-- [ ] Get Out
-- [ ] Knives Out
-- [ ] Enemy of the State
-- [ ] The Prestige
-- [ ] Margin Call
-- [ ] GoodFellas
-- [ ] The Big Short
-- [ ] Operation Mincemeat
-- [ ] Gladiator
-- [ ] Top Gun: Maverick
-- [ ] The Departed 
-- [ ] The Karate Kid
-- [ ] The Karate Kid 2
-- [ ] Rocky IV
+- **Mission Impossible: The Final Reckoning** (2025)
+- **Mission Impossible 3** (2006)
+- **Mission Impossible** (1996)
+- **Jerry Maguire** (1996)
+- **Hoosier** (1986)
+- **Gattaca** (1997)
+- **Challengers** (2024)
+- **The Accountant** (2016)
+- T**he Accountant 2** (2025)
+- **Zero Dark Thirty** (2012)
+- **Little Man** (2006)
+- **1917** (2019)
+- **The Killer** (2023)
+- **Godzilla Minus One** (2023)
+- **Tejas** (2023)
+- **Hi Nanna** (2023)
+- **Chhaava** (2025)
+- **Carry-On** (2024)
+- **Lucky Bhaskar** (2024)
+- **Aadujeevitham** (2024)
+- **Mickey 17** (2025)
+- **Captain America: Civil War** (2016)
+- **Ant-Man** (2015)
+- **Ant-Man and the Wasp** (2018)
+- **Ant-Man and the Wasp: Quantumania** (2023)
+- **Cocaine Bear** (2023)
+- **Mean Girls** (2024)
+- **Longlegs** (2024)
+- **Reservoir Dogs** (1992)
+- **Monkey Man** (2024)
+- **Didi** (2024)
+- **Wicked** (2024)
+- **The Polar Express** (2004)
+- **Twisters** (2024)
+- **September 5** (2024)
+- **The Conclave** (2024)
+- **Ready Player One** (2018)
+- **Baby Driver** (2017)
+- **The Sixth Sense** (1999)
+- **Whiplash** (2014)
+- **Peninsula** (2020)
+- **Wonka** (2023)
+- **The Shawshank Redemption** (1994)
+- **Get Out** (2017)
+- **Knives Out** (2019)
+- **Enemy of the State** (1998)
+- **The Prestige** (2006)
+- **Margin Call** (2011)
+- **Goodfellas** (1990)
+- **The Big Short** (2015)
+- **Operation Mincemeat** (2021)
+- **Gladiator** (2000)
+- **Gladiator II** (2024)
+- **Top Gun: Maverick** (2022)
+- **The Departed** (2006) 
+- **The Karate Kid** (1984)
+- **The Karate Kid, Part II** (2010)
+- **Rocky IV** (1985)
 - **Back to the Future** (1985)
 - **Back to the Future II** (1989)
 - **Back to the Future III** (1990)
