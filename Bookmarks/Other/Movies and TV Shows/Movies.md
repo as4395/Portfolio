@@ -4,10 +4,17 @@
 - **Common People** (2014)
 - **Kalki** (2024)
 - **Inside Out 2** (2023)
+- **No Time to Die** (2021)
 - **Ricky Stanicky** (2023)
 - **Madame Web** (2024)
 - **Fighter** (2024)
 - **The Beekeeper** (2023)
+- **Despicable Me** (2010)
+- **Despicable Me 2** (2013)
+- **The Minions** (2015)
+- **Despicable Me 3** (2017)
+- **Minions: The Rise of Gru** (2022)
+- **Despicable Me 4** (2024)
 - **Gran Turismo** (2023)
 - **Race Guuram** (2014)
 - **Willy Wonka & The Chocolate Factory** (1971)
@@ -154,25 +161,25 @@
 - **Superman** (2025)
 
 ## Watchlist
-- [ ] The Godfather Part 3
-- [ ] The Godfather Part 2
-- [ ] The Godfather
-- [ ] Donnie Darko
-- [ ] Tiger Zinda Hai
-- [ ] Pathaan
-- [ ] Jawan
-- [ ] Devara
-- [ ] Saaho
-- [ ] Hanu Man
-- [ ] Salaar
-- [ ] Lost in Translation
-- [ ] Rainman
-- [ ] Submarine
-- [ ] Hundred Beavers
-- [ ] Pineapple Express
-- [ ] The Conversation
-- [ ] The Exorcist
-- [ ] M:1-2 
+- **The Godfather Part III** (1990)
+- **The Godfather Part II** (1974)
+- **The Godfather** (1972)
+- **Donnie Darko** (2001)
+- **Tiger Zinda Hai** (2017)
+- **Pathaan** (2023)
+- **Jawan** (2023)
+- **Devara: Part 1** (2024)
+- **Saaho** (2019)
+- **Hanu-Man** (2024)
+- **Salaar: Part 1 – Ceasefire** (2023)
+- **Lost in Translation** (2003)
+- **Rain Man** (1988)
+- **Submarine** (2010)
+- **Hundreds of Beavers** (2022)
+- **Pineapple Express** (2008)
+- **The Conversation** (The Conversation)
+- **The Exorcist** (1973)
+- **Mission: Impossible 2** (2000)
 - [ ] Mission Impossible: The Final Reckoning
 - [ ] M:1-3
 - [ ] Mission Impossible
@@ -228,60 +235,63 @@
 - [ ] The Karate Kid
 - [ ] The Karate Kid 2
 - [ ] Rocky IV
-- [ ] Back to the Future
-- [ ] Back to the Future II
-- [ ] Back to the Future III
-- [ ] Titanic 
-- [ ] Saving Private Ryan
-- [ ] The Pursuit of Happyness
-- [ ] Inception
-- [ ] The Social Network
-- [ ] Captain America: The First Avenger
-- [ ] Ghost Protocol
-- [ ] Guardians of the Galaxy
-- [ ] John Wick 5
-- [ ] John Wick 4
-- [ ] John Wick 3
-- [ ] John Wick 2
-- [ ] John Wick
-- [ ] 10 Cloverfield Lane
-- [ ] Mission Impossible: Fallout
-- [ ] Mission Impossible: Dead Reckoning
-- [ ] Birx Box
-- [ ] Schinder’s List
-- [ ] The Truman Show
-- [ ] Django Unchained
-- [ ] Django
-- [ ] Ford v Ferrari
-- [ ] Dune 
-- [ ] Dune 2
-- [ ] Interstellar
-- [ ] Mrs Doubtfire
-- [ ] The Great Dictator
-- [ ] Trap
-- [ ] Creed III
-- [ ] Creed II
-- [ ] MS Dhoni: The Untold Story
-- [ ] London has Fallen
-- [ ] Creed
-- [ ] Limitless 
-- [ ] Ratouille 
-- [ ] Blood Diamond
-- [ ] The Da Vinci Code
-- [ ] The Devil Wears Prada
-- [ ] The Pianist
-- [ ] Catch Me if You Can
-- [ ] A Complete Unknown
-- [ ] 2001: A Space Odyssey
-- [ ] The Beatles: Get Back
-- [ ] Akira
-- [ ] Perfect Days
-- [ ] Senna
-- [ ] Bajrangi Bhaijaan
-- [ ] Jiro Dreams of Sushi
-- [ ] Indie Game: The Movie
-- [ ] Free Solo
-- [ ] The Pixar Story
-- [ ] The Kingdom of Dreams and Madness
-- [ ] The Boy and the Heron
-- [ ] Heads of State
+- **Back to the Future** (1985)
+- **Back to the Future II** (1989)
+- **Back to the Future III** (1990)
+- **Titanic** (1997)
+- **Saving Private Ryan** (1998)
+- **The Pursuit of Happyness** (2006)
+- **Inception** (2010)
+- **The Social Network** (2010)
+- **Captain America: The First Avenger** (2011)
+- **Mission: Impossible: Ghost Protocol** (2011)
+- **Guardians of the Galaxy** (2014)
+- **Guardians of the Galaxy Vol. 2** (2017)
+- **Guardians of the Galaxy Vol. 3** (2013)
+- **John Wick 5** (2025)
+- **John Wick 4** (2023)
+- **John Wick 3** (2019)
+- **John Wick 2** (2017)
+- **John Wick** (2014)
+- **10 Cloverfield Lane** (2016)
+- **Mission Impossible: Fallout** (2018)
+- **Mission Impossible: Dead Reckoning** (2025)
+- **Bird Box** (2018)
+- **Schindler’s List** (1993)
+- **The Truman Show** (1998)
+- **Django Unchained** (2012)
+- **Django** (1966)
+- **Ford v Ferrari** (2019)
+- **Dune** (2021)
+- **Dune 2** (2024)
+- **Interstellar** (2014)
+- **Mrs Doubtfire** (1993)
+- **The Great Dictator** (1940)
+- **Trap** (2024)
+- **Creed III** (2023)
+- **Creed II** (2018)
+- **MS Dhoni: The Untold Story** (2016)
+- **London has Fallen** (2016)
+- **Creed** (2015)
+- **Limitless** (2011) 
+- **Ratouille** (2007)
+- **Blood Diamond** (2006)
+- **The Da Vinci Code** (2006)
+- **The Devil Wears Prada** (2006)
+- **The Pianist** (2002)
+- **Catch Me if You Can** (2002)
+- **A Complete Unknown** (2024)
+- **2001: A Space Odyssey** (1968)
+- **The Beatles: Get Back** (2021)
+- **Akira** (1998)
+- **Perfect Days** (2023)
+- **Senna** (2010)
+- **Bajrangi Bhaijaan** (2015)
+- **Jiro Dreams of Sushi** (2011)
+- **Indie Game: The Movie** (2012)
+- **Free Solo** (2018)
+- **The Pixar Story** (2007)
+- **The Kingdom of Dreams and Madness** (2013)
+- **The Boy and the Heron** (2023)
+- **Heads of State** (2025)
+- **F1** (2025)
