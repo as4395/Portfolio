@@ -330,4 +330,12 @@ Music Playlist
 - **Give Me Some Sunshine** by Suraj Jagan & Sharman Joshi  
 - **Chammak Challo** by Akon & Hamsika Iyer  
 - **Naina** by Diljit Dosanjh  
-- **Hip's Don't Lie** by Shakira
+- **Hips Don't Lie** by Shakira
+- **Soni Soni** by Darshan Raval & Jonita Gandhi 
+- **Tere Bina** by A.R. Rahman  
+- **Bolna** by Arijit Singh  
+- **Paaro** by Aditya Rikhari  
+- **Lambiyaan Si Judaiyaan** by Arijit Singh  
+- **Unstoppable** by Sia  
+- **Jhol** by Mannu & Annural Khalid  
+- **Shaky** by Sanju Rathod 
