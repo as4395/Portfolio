@@ -54,6 +54,10 @@
 - **Sunderland 'Til I Die** (2018–2024)  
 - **The Hunt for Veerappan** (2023)  
 - **Chernobyl** (2019)
+- **Breaking Bad: No Half Measures – Creating the Final Season** (2013)  
+- **The Beatles: Get Back** (2021)  
+- **The Last Dance** (2020)  
+- **Don't Die: The Man Who Wants to Live Forever** (2024)
 
 ## 😂 **Stand-up Comedy Specials**
 
