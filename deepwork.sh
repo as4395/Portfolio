@@ -1,137 +1,129 @@
 #!/bin/bash
 
-# Deepwork Automation Script
+# CONFIG
+DEEPWORK_DIR="$HOME/.deepwork"
+WALLPAPER_BACKUP="$DEEPWORK_DIR/original_wallpaper.jpg"
+BLOCKLIST="/etc/hosts"
+BACKUP_HOSTS="$DEEPWORK_DIR/hosts.backup"
+DND_ON="$DEEPWORK_DIR/enable_dnd.sh"
+DND_OFF="$DEEPWORK_DIR/disable_dnd.sh"
 
-# TODO: Add the following features to this script:
-#   - Desktop notifications (osascript -e 'display notification "..."')
-#   - Pomodoro count in the menu bar
-#   - Custom work/break durations
+# FUNCTIONS
 
-echo "Welcome to Deepwork automation."
+function notify() {
+  osascript -e "display notification \"$1\" with title \"DeepWork\""
+}
 
-# Ask for sudo access upfront
-echo "Requesting sudo access..."
-sudo -v || { echo "Sudo failed. Exiting."; exit 1; }
+function get_wallpaper() {
+  osascript -e 'tell application "System Events" to get picture of current desktop'
+}
 
-# Duration input
-echo "How long do you want to block distractions? (hours, e.g. 1.5):"
-read hours
-if [[ -z "$hours" ]]; then
-  echo "No duration entered. Exiting."
-  exit 1
-fi
+function set_wallpaper() {
+  osascript -e "tell application \"System Events\" to set picture of every desktop to \"$1\""
+}
 
-# Soundtrack
-echo "Play soundtrack? (y/n):"
-read play_soundtrack
-if [[ "$play_soundtrack" == "y" ]]; then
-  echo "Enter full path to soundtrack mp3:"
-  read soundtrack_path
-fi
+function backup_wallpaper() {
+  local current
+  current="$(get_wallpaper)"
+  cp "$current" "$WALLPAPER_BACKUP" 2>/dev/null
+}
 
-# Website input
-echo "Enter websites to block (comma-separated)."
-echo "Leave input empty to finish."
-websites_to_block=()
-while true; do
-  echo "Websites (e.g. facebook.com, twitter.com):"
-  read input
-  if [[ -z "$input" ]]; then
-    break
+function start_dnd() {
+  bash "$DND_ON"
+}
+
+function stop_dnd() {
+  bash "$DND_OFF"
+}
+
+function block_websites() {
+  sudo cp "$BLOCKLIST" "$BACKUP_HOSTS"
+  IFS=',' read -ra SITES <<< "$1"
+  for site in "${SITES[@]}"; do
+    clean=$(echo "$site" | sed 's|https\?://||g' | sed 's|/.*||g')
+    echo "127.0.0.1 $clean" | sudo tee -a "$BLOCKLIST" > /dev/null
+  done
+  dscacheutil -flushcache
+}
+
+function restore_websites() {
+  if [ -f "$BACKUP_HOSTS" ]; then
+    sudo cp "$BACKUP_HOSTS" "$BLOCKLIST"
+    dscacheutil -flushcache
   fi
-  IFS=',' read -ra sites <<< "$input"
-  for site in "${sites[@]}"; do
-    trimmed=$(echo "$site" | xargs)
-    if [[ -n "$trimmed" ]]; then
-      websites_to_block+=("$trimmed")
+}
+
+function wait_for_app() {
+  app="$1"
+  echo "Waiting for $app to open..."
+  while true; do
+    if pgrep -x "$app" > /dev/null; then
+      break
     fi
+    sleep 2
   done
-done
+}
 
-# Enable Do Not Disturb
-echo "Enabling Do Not Disturb..."
-osascript ~/enable_dnd.scpt
+function countdown() {
+  secs="$1"
+  echo "Blocking for $(bc <<< "$secs/3600") hour(s)."
+  echo "Press any key to cancel..."
+  read -t 10 -n 1 && { echo "Cancelled."; cleanup; exit; }
 
-# Modify /etc/hosts if needed
-if [[ "${#websites_to_block[@]}" -gt 0 ]]; then
-  echo "Blocking websites..."
-  tempfile=$(mktemp)
-  for website in "${websites_to_block[@]}"; do
-    echo "127.0.0.1 $website" >> "$tempfile"
+  for i in $(seq 10 -1 1); do
+    echo -n "$i... "
+    sleep 1
   done
-  sudo tee -a /etc/hosts < "$tempfile" > /dev/null
-  rm "$tempfile"
+  echo
+}
+
+function cleanup() {
+  echo -e "\n🧹 Cleaning up…"
+  restore_websites
+  stop_dnd
+  [ -f "$WALLPAPER_BACKUP" ] && set_wallpaper "$WALLPAPER_BACKUP"
+  killall afplay 2>/dev/null
+  notify "Session ended."
+}
+
+# MAIN
+
+read -p "How long (hours, e.g. 1.5): " hours
+duration=$(echo "$hours * 3600" | bc)
+read -p "Play soundtrack? (y/n): " play
+if [[ "$play" == "y" ]]; then
+  echo "Provide path to mp3 file (e.g., ~/Downloads/track.mp3):"
+  read -r music_path
+  afplay "$music_path" &
+fi
+
+read -p "Websites to block (comma-separated): " sites
+read -p "Enable Pomodoro? (y/n): " pomo
+read -p "Wait for app to launch before starting? (leave blank to skip): " waitapp
+
+[ -n "$waitapp" ] && wait_for_app "$waitapp"
+
+notify "Session started"
+backup_wallpaper
+set_wallpaper "/System/Library/Desktop Pictures/Solid Colors/Solid Black.png"
+start_dnd
+block_websites "$sites"
+
+countdown "$duration"
+
+if [[ "$pomo" == "y" ]]; then
+  work=1500  # 25 mins
+  break=300  # 5 mins
+  while true; do
+    echo "Pomodoro: Work for $(($work / 60)) min"
+    notify "Pomodoro: Work session started"
+    sleep "$work"
+    echo "Pomodoro: Break for $(($break / 60)) min"
+    notify "Pomodoro: Break time"
+    sleep "$break"
+  done
 else
-  echo "No websites entered. Skipping blocking."
+  sleep "$duration"
 fi
 
-# Close distraction apps
-echo "Closing known distraction apps..."
-apps_to_close=("Safari" "Firefox" "Brave" "Slack" "Discord" "Zoom")
-for app in "${apps_to_close[@]}"; do
-  pkill "$app" 2>/dev/null
-done
-
-# Start soundtrack
-if [[ "$play_soundtrack" == "y" ]]; then
-  afplay "$soundtrack_path" &
-  soundtrack_pid=$!
-fi
-
-# Pomodoro mode
-echo "Enable Pomodoro mode? (y/n):"
-read pomodoro_mode
-if [[ "$pomodoro_mode" == "y" ]]; then
-  pomodoro_duration=25
-  break_duration=5
-  total_seconds=$(echo "$hours * 3600" | bc | cut -d'.' -f1)
-  cycles=$(( total_seconds / ((pomodoro_duration + break_duration) * 60) ))
-
-  for ((i=1; i<=cycles; i++)); do
-    echo "Pomodoro $i: Work for $pomodoro_duration minutes."
-    sleep $((pomodoro_duration * 60))
-    echo "Break: $break_duration minutes."
-    sleep $((break_duration * 60))
-  done
-
-  echo "Pomodoro session complete."
-  goto_end=true
-fi
-
-# Countdown timer if no Pomodoro
-if [[ "$goto_end" != true ]]; then
-  echo "Session started. Time remaining: $hours hours."
-  total_seconds=$(echo "$hours * 3600" | bc | cut -d'.' -f1)
-
-  progress_bar() {
-    local total=$1
-    local interval=60
-    local elapsed=0
-    while [ "$elapsed" -lt "$total" ]; do
-      percent=$(( 100 * elapsed / total ))
-      echo -ne "Progress: [$percent%] Elapsed: $((elapsed / 60)) min\r"
-      sleep $interval
-      elapsed=$((elapsed + interval))
-    done
-    echo -e "\nTime's up."
-  }
-
-  progress_bar "$total_seconds"
-fi
-
-# Restore system state
-echo "Session complete. Restoring system state..."
-
-osascript ~/disable_dnd.scpt
-
-# Clean up /etc/hosts
-if [[ "${#websites_to_block[@]}" -gt 0 ]]; then
-  sudo sed -i '' '/127.0.0.1/d' /etc/hosts
-fi
-
-# Stop soundtrack
-if [[ "$play_soundtrack" == "y" ]]; then
-  kill "$soundtrack_pid" 2>/dev/null
-fi
-
-echo "Deep work session completed."
+cleanup
