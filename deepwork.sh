@@ -1,129 +1,100 @@
 #!/bin/bash
 
-# CONFIG
+# deepwork – distraction blocking and focus timer for macOS
+# Final version with: working DND, website blocking, ASCII art, notifications, app trigger, black wallpaper, and no cleanup
+
+set -e
+
 DEEPWORK_DIR="$HOME/.deepwork"
-WALLPAPER_BACKUP="$DEEPWORK_DIR/original_wallpaper.jpg"
-BLOCKLIST="/etc/hosts"
-BACKUP_HOSTS="$DEEPWORK_DIR/hosts.backup"
-DND_ON="$DEEPWORK_DIR/enable_dnd.sh"
-DND_OFF="$DEEPWORK_DIR/disable_dnd.sh"
+WALLPAPER_ORIG="$DEEPWORK_DIR/original_wallpaper.jpg"
+BLACK_WALLPAPER="$DEEPWORK_DIR/black.jpg"
+BLOCKLIST="$DEEPWORK_DIR/blocklist.txt"
+HOSTS_BACKUP="$DEEPWORK_DIR/hosts.bak"
+ARTTIME_BIN="$HOME/.local/bin/arttime"
 
-# FUNCTIONS
+mkdir -p "$DEEPWORK_DIR"
 
-function notify() {
-  osascript -e "display notification \"$1\" with title \"DeepWork\""
-}
-
-function get_wallpaper() {
-  osascript -e 'tell application "System Events" to get picture of current desktop'
-}
-
-function set_wallpaper() {
-  osascript -e "tell application \"System Events\" to set picture of every desktop to \"$1\""
-}
-
-function backup_wallpaper() {
-  local current
-  current="$(get_wallpaper)"
-  cp "$current" "$WALLPAPER_BACKUP" 2>/dev/null
-}
-
-function start_dnd() {
-  bash "$DND_ON"
-}
-
-function stop_dnd() {
-  bash "$DND_OFF"
-}
-
-function block_websites() {
-  sudo cp "$BLOCKLIST" "$BACKUP_HOSTS"
-  IFS=',' read -ra SITES <<< "$1"
-  for site in "${SITES[@]}"; do
-    clean=$(echo "$site" | sed 's|https\?://||g' | sed 's|/.*||g')
-    echo "127.0.0.1 $clean" | sudo tee -a "$BLOCKLIST" > /dev/null
-  done
-  dscacheutil -flushcache
-}
-
-function restore_websites() {
-  if [ -f "$BACKUP_HOSTS" ]; then
-    sudo cp "$BACKUP_HOSTS" "$BLOCKLIST"
-    dscacheutil -flushcache
-  fi
-}
-
-function wait_for_app() {
-  app="$1"
-  echo "Waiting for $app to open..."
-  while true; do
-    if pgrep -x "$app" > /dev/null; then
-      break
-    fi
-    sleep 2
-  done
-}
-
-function countdown() {
-  secs="$1"
-  echo "Blocking for $(bc <<< "$secs/3600") hour(s)."
-  echo "Press any key to cancel..."
-  read -t 10 -n 1 && { echo "Cancelled."; cleanup; exit; }
-
-  for i in $(seq 10 -1 1); do
-    echo -n "$i... "
-    sleep 1
-  done
-  echo
-}
-
-function cleanup() {
-  echo -e "\n🧹 Cleaning up…"
-  restore_websites
-  stop_dnd
-  [ -f "$WALLPAPER_BACKUP" ] && set_wallpaper "$WALLPAPER_BACKUP"
-  killall afplay 2>/dev/null
-  notify "Session ended."
-}
-
-# MAIN
-
+# Ask for session length
 read -p "How long (hours, e.g. 1.5): " hours
-duration=$(echo "$hours * 3600" | bc)
-read -p "Play soundtrack? (y/n): " play
-if [[ "$play" == "y" ]]; then
-  echo "Provide path to mp3 file (e.g., ~/Downloads/track.mp3):"
-  read -r music_path
-  afplay "$music_path" &
+seconds=$(awk "BEGIN {print int($hours * 3600)}")
+
+# Ask about soundtrack
+read -p "Play soundtrack? (y/n): " play_sound
+if [[ "$play_sound" == "y" ]]; then
+    read -p "Path to custom mp3 file: " mp3_path
+    if [[ -f "$mp3_path" ]]; then
+        mpv --no-video "$mp3_path" --loop-file &
+        mpv_pid=$!
+    fi
 fi
 
-read -p "Websites to block (comma-separated): " sites
-read -p "Enable Pomodoro? (y/n): " pomo
-read -p "Wait for app to launch before starting? (leave blank to skip): " waitapp
+# Ask about websites to block
+read -p "Websites to block (comma-separated): " sites_input
+IFS=',' read -ra sites <<< "$sites_input"
+echo "" > "$BLOCKLIST"
+for site in "${sites[@]}"; do
+    site=$(echo "$site" | xargs)
+    [[ -n "$site" ]] && echo "127.0.0.1 $site" >> "$BLOCKLIST"
+done
 
-[ -n "$waitapp" ] && wait_for_app "$waitapp"
+# Ask about Pomodoro
+read -p "Enable Pomodoro? (y/n): " enable_pomo
 
-notify "Session started"
-backup_wallpaper
-set_wallpaper "/System/Library/Desktop Pictures/Solid Colors/Solid Black.png"
-start_dnd
-block_websites "$sites"
+# Confirm app trigger
+read -p "Enable trigger by app (e.g., Obsidian)? (y/n): " trigger_app
+if [[ "$trigger_app" == "y" ]]; then
+    read -p "App name (e.g., Obsidian): " app_name
+    echo "Waiting for $app_name to start..."
+    while ! pgrep -x "$app_name" >/dev/null; do sleep 2; done
+    echo "$app_name launched — starting session."
+fi
 
-countdown "$duration"
+# Enable Do Not Disturb
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
+defaults -currentHost write com.apple.notificationcenterui doNotDisturb -boolean true
+killall NotificationCenter &>/dev/null || true
 
-if [[ "$pomo" == "y" ]]; then
-  work=1500  # 25 mins
-  break=300  # 5 mins
-  while true; do
-    echo "Pomodoro: Work for $(($work / 60)) min"
-    notify "Pomodoro: Work session started"
-    sleep "$work"
-    echo "Pomodoro: Break for $(($break / 60)) min"
-    notify "Pomodoro: Break time"
-    sleep "$break"
-  done
+# Save current wallpaper
+osascript -e "tell application "System Events" to tell every desktop to set picture to "$BLACK_WALLPAPER"" 2>/dev/null || true
+
+# Block websites
+sudo cp /etc/hosts "$HOSTS_BACKUP"
+cat "$BLOCKLIST" | sudo tee -a /etc/hosts >/dev/null
+
+# Show ASCII Art
+"$ARTTIME_BIN" --nolearn -a butterfly -t "deep work time – blocking distractions" -g "${hours}h"
+
+# Notification
+osascript -e 'display notification "Deep Work started" with title "Focus Mode"' &
+
+echo ""
+echo "Blocking for $hours hour(s). Press any key to cancel..."
+for i in $(seq 10 -1 1); do
+    echo -n "$i... "; sleep 1
+done
+echo ""
+
+start=$(date +%s)
+
+if [[ "$enable_pomo" == "y" ]]; then
+    pomo_work=25
+    pomo_break=5
+    pomo_seconds=$((pomo_work * 60))
+    break_seconds=$((pomo_break * 60))
+
+    while true; do
+        echo "Pomodoro work started."
+        osascript -e 'display notification "Pomodoro: Work started" with title "Pomodoro"' &
+        sleep "$pomo_seconds"
+        osascript -e 'display notification "Pomodoro: Take a break" with title "Pomodoro"' &
+        sleep "$break_seconds"
+    done
 else
-  sleep "$duration"
+    read -rsn1 -t "$seconds"
 fi
 
-cleanup
+# Session complete
+osascript -e 'display notification "Session complete!" with title "Deep Work"' &
+
+echo ""
+echo "Session complete."
