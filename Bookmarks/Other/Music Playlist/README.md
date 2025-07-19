@@ -338,4 +338,9 @@ Music Playlist
 - **Lambiyaan Si Judaiyaan** by Arijit Singh  
 - **Unstoppable** by Sia  
 - **Jhol** by Mannu & Annural Khalid  
-- **Shaky** by Sanju Rathod 
+- **Shaky** by Sanju Rathod
+- **Sweety* by Siddharth Mahadevan
+- **Udhyogam Oodipoyindi** by Ranjith
+- **OMG Daddy** by Roll Rida
+- **Julai** by Suchith Suresan
+- **Race Gurram** by Usha Uthup
