@@ -348,3 +348,6 @@ Music Playlist
 - **Bulletu Bandi** by Mohana Bhogaraju
 - **Na Roja Nuvve** by Hesham Abdul Wahab
 - **Naa Koduka** by Dev Sri Prasad
+- **Ek number** by Himesh Reshammiya
+- **Iko Iko (My Bestie)** by Justin Wellington
+- **Jian Dan Ai (Simple Love)** by Jay Chou
