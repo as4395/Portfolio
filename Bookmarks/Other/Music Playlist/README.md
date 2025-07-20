@@ -344,3 +344,7 @@ Music Playlist
 - **OMG Daddy** by Roll Rida
 - **Julai** by Suchith Suresan
 - **Race Gurram** by Usha Uthup
+- **Radha** by Udit Narayan
+- **Bulletu Bandi** by Mohana Bhogaraju
+- **Na Roja Nuvve** by Hesham Abdul Wahab
+- **Naa Koduka** by Dev Sri Prasad
