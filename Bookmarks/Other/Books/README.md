@@ -235,6 +235,13 @@
 233. **Fifth Business (The Deptford Trilogy, #1)** by Robertson Davies
 234. **Confessions of a Japanese Linguist - How to Master Japanese** by John F. L. Clements
 235. **Lord of the Flies** by William Golding
+236. **How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers** by Sönke Ahrens
+237. **Read Write Own: Building the Next Era of the Internet** by Chris Dixon
+238. **Confessions of a Cartel Hit Man** by Martin Corona
+239. **The Mom Test: How to Talk to Customers & Learn if Your Business is a Good Idea When Everyone is Lying to You** by Rob Fitzpatrick
+240. **Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking** by Samin Nosrat
+241. **Happy Sexy Millionaire: Unexpected Truths about Fulfillment, Love, and Success** by Steven Bartlett
+242. **Sponsor Magnet** by Justin Moore
 
 
 # Japanese Books 🇯🇵
@@ -292,6 +299,8 @@
 2. **The Tanakh**
 3. **The Babylonian Talmud**
 4. **The Jerusalem Talmud**
+5. **Ecclesiastes** by King Solomon
+
 
 ### Hinduism
 1. **The Bhagavad Gita** by Vyasa
