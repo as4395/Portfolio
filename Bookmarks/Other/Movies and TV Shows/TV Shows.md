@@ -1,4 +1,4 @@
-## 📺 **TV Shows (Fictional Series & Animation)**
+## 📺 **TV Shows**
 
 - **Black Mirror** (2011–present)  
 - **Breaking Bad** (2008–2013)  
@@ -48,6 +48,32 @@
 - **Scooby-Doo! Mystery Incorporated** (2010–2013)  
 - **At Eighteen** (2019)  
 - **Gossip Girl** (2007–2012)
+- **Sopranos** (1999-2007)
+- **Fire Country** (2022-present)
+- **Chicago P.D.** (2014-2025)
+- **The Boys** (2019-present)
+- **Tom Clancy's Jack Ryan** (2018-2023)
+- **Crash Landing on You** (2019-2020)
+- **Boys over Flowers** (2009)
+- **Better Call Saul** (2015-2022)
+- **Cobra Kai** (2024-2025)
+- **Money Heist** (2017-2021)
+- **Mindhunter** (2017-2019)
+- **Criminal Minds** (2005-2020)
+- **Grey's Anatomy** (2005-present)
+- **South Park** (1997-present)
+- **Family Guy** (1999-present)
+- **The Simpsons** (1989-present)
+- **Key & Peele** (2012-2015)
+- **Seinfeld** (1989-1998)
+- **Friends** (1994-2004)
+- **The Good Place** (2016-2020)
+- **Outer Banks** (2020-present)
+- **Stranger Things** (2016-present)
+- **Narcos** (2015-2017)
+- **Brooklyn Nine-Nine** (2013-2021)
+- **F1: Drive to Survive** (2019-present)
+
 
 ## 🎥 **Docuseries / Miniseries**
 
@@ -58,6 +84,9 @@
 - **The Beatles: Get Back** (2021)  
 - **The Last Dance** (2020)  
 - **Don't Die: The Man Who Wants to Live Forever** (2024)
+- **Adolescence** (2025)
+- **The Queen's Gambit** (2020)
+
 
 ## 😂 **Stand-up Comedy Specials**
 
