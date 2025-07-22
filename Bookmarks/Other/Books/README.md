@@ -242,6 +242,20 @@
 240. **Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking** by Samin Nosrat
 241. **Happy Sexy Millionaire: Unexpected Truths about Fulfillment, Love, and Success** by Steven Bartlett
 242. **Sponsor Magnet** by Justin Moore
+243. **Extreme Privacy: What It Takes to Disappear** by Michael Bazzell  
+244. **The Brothers Karamazov** by Fyodor Dostoevsky  
+245. **A New Earth: Awakening to Your Life's Purpose** by Eckhart Tolle  
+246. **The Power of Now** by Eckhart Tolle  
+247. **Practicing the Power of Now** by Eckhart Tolle  
+248. **Stillness Speaks** by Eckhart Tolle  
+249. **Guardians of Being** by Eckhart Tolle 
+250. **Milton's Secret** by Eckhart Tolle (co-authored with Robert S. Friedman)  
+251. **Oneness With All Life** by Eckhart Tolle  
+252. **On the Genealogy of Morality** by Friedrich Nietzsche  
+253. **My Brilliant Friend** by Elena Ferrante  
+254. **The Story of a New Name** by Elena Ferrante  
+255. **Those Who Leave and Those Who Stay** by Elena Ferrante  
+256. **The Story of the Lost Child** by Elena Ferrante  
 
 
 # Japanese Books 🇯🇵
