@@ -351,3 +351,6 @@ Music Playlist
 - **Ek number** by Himesh Reshammiya
 - **Iko Iko (My Bestie)** by Justin Wellington
 - **Jian Dan Ai (Simple Love)** by Jay Chou
+- **Kesariya** by Arijit Singh  
+- **Teri Mitti** by B Praak  
+- **Samajavaragamana** by Sid Sriram  
