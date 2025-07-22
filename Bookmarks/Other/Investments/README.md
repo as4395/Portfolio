@@ -3,7 +3,11 @@
 - InkPalm 5
 - Tencent Pocket 2
 - Hisense A5
-- Hisense A9 
+- Hisense A9
+- Zebra F701
+- HHKB Professional Hybrid Type-S (Snow/Stamped)
+- Logitech MX Anywhere 3S Wireless Mouse
+- Sony Wireless Streaming Microphone ECM-S1
 - Boox Nova Air
 - Q60
 - Logitech M750
