@@ -255,7 +255,28 @@
 253. **My Brilliant Friend** by Elena Ferrante  
 254. **The Story of a New Name** by Elena Ferrante  
 255. **Those Who Leave and Those Who Stay** by Elena Ferrante  
-256. **The Story of the Lost Child** by Elena Ferrante  
+256. **The Story of the Lost Child** by Elena Ferrante
+257. **The Fourth Man: The Hunt for a KGB Spy at the Top of the CIA and the Rise of Putin's Russia** by Robert Baer
+258. **The Art of Deception** by Kevin Mitnick
+259. **The Art of Invisibility** by Kevin Mitnick
+260. **Cybersecurity and Cyberwar: What Everyone Needs to Know** by Allan Friedman & P.W. Singer
+261. **The Code Book** by Simon Singh
+262. **Future Crimes** by Marc Goodman
+263. **The End of Loyalty** by Rick Wartzman
+264. **Pegasus - How a Spy in Your Pocket Threatens the End of Privacy, Dignity, and Democracy** by Laurent Richard & Sandrine Rigaud
+265. **Why We Sleep** by Matthew Walker
+266. **Where the Wizards Go at Night** by Kate Hafner
+267. **Fancy Bear Goes Phishing** by Scott Shapiro & Ronald Deibert
+268. **Outlive: The Science and Art of Longevity** by Peter Attia, MD & Bill Gifford
+269. **Gulag Archipelago** by Aleksandr Solzhenitsyn
+270. **Changeology** by John C. Norcross, Kristin Loberg, and James O. Prochaska
+271. **Big Vape** by Jaime Ducharme
+272. **Hiroshima Nagasaki** by Paul Ham
+273. **The Rise and Fall of the Third Reich** by William L. Shirer
+274. **Fight Right** by Julie Gottman & John Gottman
+275. **Kill Decision** by Daniel Suarez
+276. **Fatal Descent: Andreas Lubitz and the Crash of Germanwings Flight 9525** by Jeff Wise
+277. **Almond** by Won-pyung Sohn
 
 
 # Japanese Books 🇯🇵
@@ -271,12 +292,11 @@
 9. **カフェで待つ人たち** - *Tales from the Cafe* (Before the Coffee Gets Cold #2) by Toshikazu Kawaguchi
 10. **コーヒーが冷めないうちに** - *Before the Coffee Gets Cold* (Before the Coffee Gets Cold #1) by Toshikazu Kawaguchi
 11. **博士の愛した数式（はかせのあいしたすうしき）** - *The Housekeeper and the Professor* by Yoko Ogawa
-12. **アーモンド** - *Almond* by Won-pyung Sohn
-13. **五輪書（ごりんしょ）** - *The Book of Five Rings* by Miyamoto Musashi
-14. **陰翳礼讃（いんえいれいさん）** - *In Praise of Shadows* by Jun'ichirō Tanizaki
-15. **嫌われる勇気** - *The Courage to be Disliked* by Ichiro Kishimi and Fumitake Koga
-16. **走ることについて語るときに僕の語ること** - *What I Talk About When I Talk About Running* by Haruki Murakami
-17. **メモの魔力** - *The Magic of Memos* by Yuji Maeda
+12. **五輪書（ごりんしょ）** - *The Book of Five Rings* by Miyamoto Musashi
+13. **陰翳礼讃（いんえいれいさん）** - *In Praise of Shadows* by Jun'ichirō Tanizaki
+14. **嫌われる勇気** - *The Courage to be Disliked* by Ichiro Kishimi and Fumitake Koga
+15. **走ることについて語るときに僕の語ること** - *What I Talk About When I Talk About Running* by Haruki Murakami
+16. **メモの魔力** - *The Magic of Memos* by Yuji Maeda
 
 
 # Textbooks 📘
@@ -296,6 +316,24 @@
 2. **Command-Line Rust: A Project-Based Primer for Writing Rust CLIs** by Ken Youens-Clark  
 3. **Venture Deals** by Brad Feld and Jason Mendelson  
 4. **The Google Resume: How to Prepare for a Career and Land a Job at Apple, Microsoft, or Any Top Tech Company** by Gayle Laakmann McDowell
+5. * **Black Hat Python** by Justin Seitz
+6. **Violent Python** by TJ O’Connor
+7. **Learn C the Hard Way** by Zed A. Shaw
+8. **Practical Malware Analysis** by Michael Sikorski
+9. **Malware Data Science: Attack Detection and Attribution** by Joshua Saxe
+10. **Serious Cryptography: A Practical Introduction to Modern Encryption** by Jean-Philippe Aumasson
+11. **Linux Basics for Hackers: Getting Started with Networking, Scripting, and Security in Kali** by OccupyTheWeb
+12. **Applied Network Security Monitoring** by Chris Sanders & Jason Smith
+13. **The Practice of Network Security Monitoring: Understanding Incident Detection and Response** by Richard Bejtlich
+14. **Applied Incident Response** by Steve Anson
+15. **Practical Packet Analysis: Using Wireshark to Solve Real-World Network Problems** by Chris Sanders
+16. **Nmap 6 Cookbook: The Fat-Free Guide to Network Security Scanning** by Nicholas Marsh
+17. **Hacking: The Art of Exploitation** by Jon Erickson
+18. **Blue Team Field Manual** by Alan White
+19. **Blue & Red Team Field Manual** by Alan White & Ben Clark
+20. **Real-World Bug Hunting: A Field Guide to Web Hacking** by Peter Yaworski
+21. **Security Testing with Raspberry Pi** by Daniel Dieterle
+22. **Security Engineering** by Ross Anderson
 
 # Religious Books 📖
 
