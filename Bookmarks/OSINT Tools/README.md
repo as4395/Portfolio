@@ -132,7 +132,7 @@
 - [DuckDuckGo](https://duckduckgo.com)
 - [SearchX](https://baresearch.org/?q=)
 - [Brave](https://search.brave.com)
-- [Wayback Machine - Archive.org)(https://web.archive.org)
+- [Wayback Machine - Archive.org](https://web.archive.org)
 - [Ahima](https://ahmia.fi/search/?q=)
 - [Tor.link](https://tor.link/?q=)
 
@@ -152,3 +152,16 @@ Tor Required
 - [OnionCenter](http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/index.php?a=search&q=)
 - [FreshOnion](http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion/?query=)
   
+- [Google Scholar](https://scholar.google.com)
+- [Litmaps](https://app.litmaps.com)
+- [Webpage Archive](https://archive.is)
+- [Twitonomy](https://www.twitonomy.com)
+- [BotSentinel](https://botsentinel.com)
+- [Wayback Tweets - Streamlit](https://waybacktweets.streamlit.app)
+- [Nitter](https://nitter.net)
+- [Instagram Explorer | OSINT Combine](https://www.osintcombine.com/free-osint-tools/instagram-explorer)
+- [Instagram Person Search (change "person" for name)](https://www.google.com/search?client=ubuntu&hs=CzK&channel=fs&ei=Q1rhW9yIDI27rQHr_bDACw&q=site%3Ainstagram.com+%22person%22&oq=site%3Ainstagram.com+%22person%22&gs_l=psy-ab.3...4194.4916..5259...0.0..0.329.1218.0j4j1j1......0....1..gws-wiz.CPTTLh3l4Bk)
+- [Instagram editor and viewer - Picuki.com](https://picuki.site)
+- [TikTok Quick Search | OSINT Combine](https://www.osintcombine.com/free-osint-tools/tiktok-quick-search)
+- [VKontakte People Search](https://vk.com/people)
+- [VK.watch – history of VKontakte profiles]
