@@ -6,31 +6,32 @@ A collection of notes, observations, and practical advice from hands-on experien
 
 ## General Development and Testing Tips
 
-- **Guard Clausing**
-- Use early returns instead of nesting logic under `else`.
-- Improves readability and reduces cognitive load.
-
+- **Guard Clauses**
+  - Use early returns instead of nesting logic under `else`.
+  - This means checking for invalid conditions at the very beginning of your function and exiting immediately if they're met
+  - It vastly improves readability by keeping your main code path flat and easy to follow, as you avoid complex, deeply indented if-else structures.
+    
 ---
 
 ## Burp Suite Tips
 
 - **Backup Your Config**
-- Path: `~/.BurpSuite/UserConfigPro.json`
-- Occasionally, Burp may fail to load extensions and overwrite this file on restart.
-- Keep a versioned backup to avoid configuration loss.
+    - Path: `~/.BurpSuite/UserConfigPro.json`
+    - Occasionally, Burp may fail to load extensions and overwrite this file on restart.
+    - Keep a versioned backup to avoid configuration loss.
 
 - **Search and Replace Rules**
-- Add these rules in **Proxy → Options → Match and Replace**.
-- Refresh the target app to reveal hidden functionality.
-- ⚠️ Rule 4 may break functionality but is useful for uncovering hidden HTML5 elements.
-
-
-![match-and_replace.png](https://github.com/user-attachments/assets/4385df10-c0b3-4887-b2fb-efbdb5dee574)
-
+    - Add these rules in **Proxy → Options → Match and Replace**.
+    - Refresh the target app to reveal hidden functionality.
+    - ⚠️ Rule 4 may break functionality but is useful for uncovering hidden HTML5 elements.
+      
+        <br> <div style="text-align: center;">
+          <img src="https://github.com/user-attachments/assets/4385df10-c0b3-4887-b2fb-efbdb5dee574" width="75%" height="auto">
+        </div>
 
 ---
 
-## Bug Bounty and AppSec Notes
+## Bug Bounty and Application Security Notes
 
 - Look for **S3 bucket names** that 404 on page load — this can indicate a deleted bucket.
 - S3 names are globally unique. If deleted, attackers may re-register the bucket and serve malicious content.
@@ -69,7 +70,7 @@ A collection of notes, observations, and practical advice from hands-on experien
 
 ---
 
-## Reading and References
+## Additional Reading and References
 
 - [Kubernetes Cluster Tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/)
 - [ExifTool RCE - CVE-2021-22204](https://devcraft.io/2021/05/04/exiftool-arbitrary-code-execution-cve-2021-22204.html)
@@ -95,7 +96,7 @@ It seems that the more changes are introduced, the further people are from unifo
 
 ## Language-Specific Notes
 
-### Python Tips
+### Python
 
 - It is possible to multiply two different data types. 
 ```python
@@ -104,9 +105,9 @@ print(blah)
 print(blah * 2)
 ```
 
-Use `get` method for accessing dictionary items instead of using square brackets.
+Use the `get` method for accessing dictionary items instead of using square brackets.
 
-### **Right Way**
+#### **Right Way**
 
 ```python
 alex = {
@@ -118,7 +119,7 @@ alex = {
 print(alex.get('age'))
 ```
 
-### **Wrong Way**
+#### **Wrong Way**
 
 ```python
 alex = {
@@ -130,10 +131,11 @@ alex = {
 print(alex['age'])
 ```
 
-### My thoughts:
+#### My thoughts:
 
 In my opinion, using `get()` is often ugly and not great for readability. The baked-in exception handling will return `None` during `KeyNotFoundExceptions`. I’ve been bitten by this because `None` wasn’t handled properly. Rather, it's often better to implement context-specific exceptions for clearer error handling.
 
+### PHP
 
 - PHP security example – execution flow and token generation: 
 ```php
@@ -206,11 +208,6 @@ Explanation:
 - Identify the most talented people in each aspect of your role: tech, reporting, work ethic.
 - Learn directly from them; study their patterns.
 - Don't try to learn everything — build a strong base that accelerates further learning.
-- SSNs are not a safe authentication method:
-- 9-digit number
-- First 5 digits often derived from birth date or location
-- The final 4 are brute-forceable
-- Compare this to modern password policy requirements.
 - Pentesters must know how to code.
 
 --- 
@@ -219,16 +216,41 @@ Explanation:
 
 ### S-52: Code-39 Vulnerable App
 
-<img width="500" height="500" alt="Python Tip" src="https://github.com/user-attachments/assets/bd29254b-f656-4be2-8573-7f2a4632e321" />
+```php
+<?php
+private DOMDocument $doc;
+private $authfile = 'employees.xml';
 
+private function auth($userId, $passwd) {
+    $this->doc->load($this->authfile);
+    $xpath = new DOMXPath($this->doc);
+    $filter = "[loginId=$userId and passwd='$passwd'][position()<=1]";
+    $employee = $xpath->query("/employees/employee$filter");
+    return ($employee->length == 0) ? false : true;
+}
+public function index(Request $request) {
+    $userId = (int)$request->request->get('userId');
+    $password = $request->request->get('password');
+    if ($request->request->get('submit') !== null) {
+        try {
+            if (!$this->auth($userId, $password)) {
+                return $this->json(['error' => 'Wrong userId.']);
+            }
+```
 
-**1.** Passwords transmitted in query string
+## Vulnerabilities Identified
 
-**2.** XPATH injection present
+**1. Passwords Transmitted in Query String**
+
+- When passwords appear directly in the web address (the URL), they become visible in browser history, server logs, and are easily intercepted. This practice is fundamentally insecure for sensitive information.
+
+**2. XPath Injection Present**
+
+- This vulnerability arises because the code takes user-provided input (like a username or password) and directly inserts it into a command used to search an XML file. A malicious user can then input special characters that alter the command's intent, potentially gaining unauthorized access or extracting confidential data.
 
 --- 
 
-**_“PHP is always an interesting pool for bugs. Can you spot the bug?”_**
+**PHP is always an interesting pool for bugs. Can you spot the bug?**
 ```php
 <?php
 session_start();
@@ -351,14 +373,37 @@ Learn more:
 - Downside: limited customizability.
 - Apps with referrer validation might reject probes.
 
-<img width="402" height="209" alt="E9VW2QoXIAcpInK" src="https://github.com/user-attachments/assets/6b993f1d-1d8c-40d0-b194-9141b6ae146f" />
+---
+
+**Here's a code snippet. Can you find the vulnerability?**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+<body>
+    <div class="input-group-append">
+        <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa ...
+        </div></div></div></div>
+    <div class="bg-light py-4"><div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2053 Securewebsite All rights reserv....
+    </div></div>
+    </footer>
+    <script src="[https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle](https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle)....</script>
+    <script src="[http://www.myplacetostorecodenonexisting.com/dothings.js](http://www.myplacetostorecodenonexisting.com/dothings.js)"></script>
+</body>
+</html>
+```
 
 **Answer:**
 Mixed content (http). Possible XSS, assuming that the domain is fictitious.
 
+Challenge presented by [Intigriti](https://www.intigriti.com)
+
 ---
 
-## Cloud & Infra Security
+## Cloud & Infrastructure Security
 
 - **Scout / ScoutSuite** – used internally by AWS.
 - Excellent for reviewing cloud configuration.
@@ -401,8 +446,8 @@ _I feel CloudFlare is pushing a bit aggressively to be the "all in one" security
 
 - **CDN stats** could be used to infer outages or disasters (fewer requests == power down in region?)
 
-- **Debug mode risks**:
-- [https://medium.com/@Tib3rius/the-importance-of-disabling-debug-mode-or-how-i-accidentally-hacked-a-ctf-2615cdd2feb0](https://medium.com/@Tib3rius/the-importance-of-disabling-debug-mode-or-how-i-accidentally-hacked-a-ctf-2615cdd2feb0)
+-  **Debug mode risks**:
+    - [https://medium.com/@Tib3rius/the-importance-of-disabling-debug-mode-or-how-i-accidentally-hacked-a-ctf-2615cdd2feb0](https://medium.com/@Tib3rius/the-importance-of-disabling-debug-mode-or-how-i-accidentally-hacked-a-ctf-2615cdd2feb0)
 
 ---
 
@@ -496,15 +541,21 @@ php >
 
 ---
 
-## Need to Deprecate SSNs 
+## Need to Deprecate SSNs
 
 - SSNs are widely leaked, even on clearnet:
-- [http://ssndob.cc](http://ssndob.cc) (Search-only interface; do **not** buy data.)
+    - [http://ssndob.cc](http://ssndob.cc) (Search-only interface; **do not buy data.**)
 
-- SSNs should be **deprecated**.
-- Predictable structure.
-- Brute-forceable final digits.
-- Weak as an identity/auth mechanism.
+- SSNs should be **deprecated** because they are:
+    - Predictable in structure.
+    - Vulnerable to brute-forcing of final digits.
+    - Weak as an identity/authentication mechanism.
+
+- SSNs are not a safe authentication method:
+    - They are only a 9-digit number.
+    - The first 5 digits are often derived from birth date or location.
+    - The final 4 digits are easily brute-forceable.
+    - This offers significantly less security compared to modern password policy requirements.
 
 ---
 
@@ -519,7 +570,7 @@ php >
 
 **BUT…**
 
-- **Reset flows are often low-hanging fruit:**
+- **Reset flows are often frequent targets for attackers:**
 - If no current password is required, CSRF becomes possible.
 - Easy win.
 
