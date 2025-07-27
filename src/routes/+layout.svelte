@@ -28,6 +28,20 @@
   <title>Abhiram Singireddy</title>
   <meta name="description" content="Student. Exploring systems with curiosity and precision." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.org" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abhiram Singireddy" />
+  <meta property="og:description" content="Student. Exploring systems with curiosity and precision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.org" />
+  <meta property="og:image" content="/og.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="min-h-screen px-4 sm:px-6 md:px-8 max-w-3xl mx-auto py-20 space-y-24">
