@@ -1,0 +1,3 @@
+Contact: mailto:security@example.org
+Preferred-Languages: en
+Canonical: https://example.org/.well-known/security.txt
