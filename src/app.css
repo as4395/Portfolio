@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose {
+  @apply prose dark:prose-invert max-w-none;
+}
