@@ -1,6 +1,11 @@
-<section class="space-y-6 text-center py-24 animate-fade-in-up">
-  <h1 class="text-3xl font-medium">Page not found.</h1>
-  <p class="text-neutral-600 dark:text-neutral-400">
-    This part of the archive hasn’t been written yet.
-  </p>
-</section>
+<script>
+  import LayoutContainer from '$lib/components/LayoutContainer.svelte';
+</script>
+
+<LayoutContainer>
+  <section class="prose dark:prose-invert text-center py-32">
+    <h1 class="text-4xl font-bold">404 — Not Found</h1>
+    <p>This page doesn’t exist. Maybe the link is old or mistyped.</p>
+    <a href="/" class="text-blue-500 hover:underline">Return Home</a>
+  </section>
+</LayoutContainer>
